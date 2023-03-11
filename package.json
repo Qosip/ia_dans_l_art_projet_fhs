@@ -1,0 +1,19 @@
+{
+  "name": "finaliadansart",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "chart.js": "^4.2.1",
+    "fancybox": "^3.0.1",
+    "ps": "^1.0.0"
+  }
+}

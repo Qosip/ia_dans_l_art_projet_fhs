@@ -1,0 +1,356 @@
+.fancybox__backdrop::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.fancybox__toolbar {
+    padding: 16px;
+}
+.f-button{
+    background-color: rgba(250, 235, 215, 0.82) !important;
+    --f-button-bg: rgba(107, 80, 53, 0.74);
+    --f-button-hover-bg: rgba(107, 80, 53, 0.74);
+    --f-button-active-bg: rgba(107, 80, 53, 0.74);
+}
+.fancybox__toolbar,
+.fancybox__nav {
+    --f-button-border-radius: 50%;
+    --f-button-bg: rgba(107, 80, 53, 0.74);
+    --f-button-hover-bg: rgba(107, 80, 53, 0.74);
+    --f-button-active-bg: rgba(107, 80, 53, 0.74);
+}
+
+.fancybox__nav {
+    --f-button-svg-width: 22px;
+    --f-button-svg-height: 22px;
+}
+
+.fancybox__thumbs.is-classic {
+    --f-thumb-width: 48px;
+    --f-thumb-height: 48px;
+    --f-thumb-gap: 16px;
+
+    --f-thumb-border-radius: 6px;
+    --f-thumb-outline: 0;
+}
+
+
+.titlepage{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listegloss{
+    padding-left: 5rem;
+
+}
+.listegloss>ul>li>p{
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+}
+
+.listegloss>ul>li{
+    list-style-type: disc;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+}
+.image_frame:hover{
+    cursor: pointer;
+}
+
+.wrapper-slider {
+    position: relative;
+    width: 50%;
+    top: -10rem;
+    margin: 100px auto 0 auto ;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.wrapper-slider .arrow-left,
+.wrapper-slider .arrow-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    left: -25px;
+    background: no-repeat center center;
+}
+.wrapper-slider .arrow-right {
+    right: -3rem;
+    left: auto;
+}
+.wrapper-slider .arrow-left {
+    left: -4rem;
+    right: auto;
+}
+.arrow-right>img{
+    filter: brightness(0) invert(1);
+    transform: rotate(0deg);
+}
+.arrow-left>img{
+    filter: brightness(0) invert(1);
+    transform: rotate(-180deg);
+}
+.wrapper-slider .arrow-left:hover,
+.wrapper-slider .arrow-right:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.items {
+    width: 45.5vw;
+
+    /*background-color: rgba(98, 98, 98, 0.62);*/
+    padding: 30px;
+    height: 30rem;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);*/
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.items .item {
+    color: #cccccc;
+    width: 40%;
+    height: 90%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 2rem;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.97);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: invert(80%);
+}
+
+.item:before{
+    content: "";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+
+
+    filter        : blur(1px) brightness(40%);
+    -moz-filter   : blur(1px) brightness(40%);
+    -webkit-filter: blur(1px) brightness(40%);
+    -o-filter     : blur(1px) brightness(40%);
+}
+.items.active .item {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.wrapper-slider .arrow-left,
+.wrapper-slider .arrow-right,
+.items,
+.items .item {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.image-holder>img{
+    -webkit-filter: blur(2px) brightness(50%);
+    filter: blur(2px) brightness(50%);
+}
+.item{
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .05em;
+    text-shadow:
+            4px 4px 0px #464646,
+            7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.source:hover{
+    cursor: pointer;
+}
+.titlepage2{
+    padding-top: 5rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.sourcelink{
+    position: relative;
+    top: 10rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.titrsrc{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.source{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.studentlist{
+    width: 90%;
+    padding-top: 23rem;
+    padding-left: 5%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.student{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.studentimg{
+    height: 35vh;
+    filter: blur(15px);
+}
+.prenom{
+    font-weight: bold;
+    padding-top: 0.5rem;
+    height: 2.5rem;
+}
+.domaine{
+    padding-bottom: 0.5rem;
+}
+.student:hover{
+    text-decoration: underline;
+}
+.descrip{
+    position: absolute;
+    left: 50%;
+    top: 15rem;
+    font-size: 2rem;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 2.5rem;
+}
+#graphnth0{
+    margin-top: 10rem;
+}
+.graph{
+    height: 70vh;
+    width: 90vw;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+#myChart{
+    background-color: rgba(245, 245, 245, 0.07);
+    position: absolute;
+    top: 5rem;
+    height: 50vh!important;
+    width: 50vw !important;
+    left: -5vw;
+    font-size: 5rem;
+}
+#myChart2{
+    background-color: rgba(245, 245, 245, 0.07);
+    position: absolute;
+    top: 5rem;
+    height: 50vh!important;
+    width: 50vw !important;
+    left: -5vw;
+    font-size: 5rem;
+}
+#myChart1{
+    background-color: rgba(245, 245, 245, 0.07);
+    top: 5rem;
+    position: absolute;
+    height: 50vh!important;
+    width: 50vw !important;
+    right: -5vw;
+}
+#myChart3{
+    background-color: rgba(245, 245, 245, 0.07);
+    top: 5rem;
+    position: absolute;
+    height: 50vh!important;
+    width: 50vw !important;
+    right: -2vw;
+}
+#p, #p2{
+    top: 3rem;
+    font-family: gopher,sans-serif;;
+    font-size: 5rem;
+    position: absolute;
+    right: 3rem;
+}
+#p1, #p3{
+    top: 3rem;
+    font-family: gopher,sans-serif;;
+    font-size: 5rem;
+    position: absolute;
+    left: 3rem;
+}
+.separ{
+    height: 1px;
+    width: 30vw;
+    margin-left: 35vw;
+    background-color: white;
+}
+canvas:hover{
+    cursor: pointer;
+}
+.ui1{
+    position: absolute;
+    width: 60%;
+    left: -10%;
+    top: 10%;
+    height: 70%;
+    z-index: 44;
+    /*background-color: rgba(211, 53, 53, 0.4);*/
+}
+.ui2{
+    position: absolute;
+    width: 60%;
+    right: -10%;
+    top: 10%;
+    height: 70%;
+    z-index: 44;
+    /*background-color: rgba(211, 53, 53, 0.4);*/
+}
+.ui2:hover, .ui1:hover{
+    cursor: pointer;
+}
