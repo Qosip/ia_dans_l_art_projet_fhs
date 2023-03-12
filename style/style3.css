@@ -205,7 +205,7 @@
 }
 .sourcelink{
     position: relative;
-    top: 10rem;
+    top: 3rem;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -226,7 +226,7 @@
 }
 .studentlist{
     width: 90%;
-    padding-top: 23rem;
+    padding-top: 16rem;
     padding-left: 5%;
     height: auto;
     display: flex;
@@ -241,17 +241,42 @@
     font-size: 2rem;
     padding: 2rem;
 }
+.francois>img{
+    filter: blur(0);
+}
+.arthur>img{
+    filter: blur(0);
+}
 .studentimg{
+    border-radius: 20px;
     height: 35vh;
     filter: blur(15px);
+    transition: 0.3s;
+}
+.student>a{
+    position: absolute;
+    z-index: 44;
+    height: 70%;
+    width: 85%;
+    /*background-color: rgba(66,152,234,0.5);*/
+}
+.student>a:hover{
+    cursor: pointer;
+}
+.studentimg:hover{
+    border-radius: 10px;
+    transform: scale(1.03);
+    cursor: pointer;
 }
 .prenom{
     font-weight: bold;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     height: 2.5rem;
 }
 .domaine{
     padding-bottom: 0.5rem;
+    max-width: 40vh;
+    line-height: 2.5rem;
 }
 .student:hover{
     text-decoration: underline;
@@ -259,8 +284,18 @@
 .descrip{
     position: absolute;
     left: 50%;
-    top: 15rem;
+    top: 12rem;
     font-size: 2rem;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 2.5rem;
+}
+.descrip2{
+    position: absolute;
+    left: 50.75%;
+    width: 60vw;
+    top: 12rem;
+    font-size: 1.75rem;
     transform: translateX(-50%);
     text-align: center;
     line-height: 2.5rem;
@@ -312,15 +347,15 @@
 }
 #p, #p2{
     top: 3rem;
-    font-family: gopher,sans-serif;;
-    font-size: 5rem;
+    font-family: gopher,sans-serif;
+    font-size: 3rem;
     position: absolute;
     right: 3rem;
 }
 #p1, #p3{
     top: 3rem;
     font-family: gopher,sans-serif;;
-    font-size: 5rem;
+    font-size: 3rem;
     position: absolute;
     left: 3rem;
 }
@@ -337,8 +372,8 @@ canvas:hover{
     position: absolute;
     width: 60%;
     left: -10%;
-    top: 10%;
-    height: 70%;
+    top: 17%;
+    height: 60%;
     z-index: 44;
     /*background-color: rgba(211, 53, 53, 0.4);*/
 }
@@ -346,11 +381,64 @@ canvas:hover{
     position: absolute;
     width: 60%;
     right: -10%;
-    top: 10%;
-    height: 70%;
+    top: 18%;
+    height: 60%;
     z-index: 44;
     /*background-color: rgba(211, 53, 53, 0.4);*/
 }
 .ui2:hover, .ui1:hover{
     cursor: pointer;
+}
+.videoint{
+    margin-top: 30vh;
+    margin-bottom: 5rem;
+    margin-left: 25vw;
+
+}
+iframe{
+    height: 70vh;
+    width: 50vw;
+}
+@media (max-width: 1580px) {
+    .descrip2 {
+        font-size: 1.25rem;
+    }
+    .credittxt{
+        margin-top: 10vh;
+    }
+}
+.titrhisto{
+    margin-top: -5rem;
+    font-size: 5rem;
+    font-family: gopher,sans-serif;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.txthisto{
+    padding-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+.credittxt{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    top: 50vh;
+    left: 50vw;
+    width: 70vw;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.credittxt>ul>li{
+    padding-bottom: 2.5rem;
+    line-height: 2.5rem;
+}
+.cred{
+    height: calc(100vh - 8.5rem);
+    width: 100vw;
 }

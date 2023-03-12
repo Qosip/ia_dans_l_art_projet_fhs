@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
     display: none !important;
 }
 .sfm-widget.sfm-widget-bottom.sfm-copy {
-    background: url(/wp-content/uploads/2022/09/eyewear_bkg_img.jpg);
+    background-color: black; /*url(/wp-content/uploads/2022/09/eyewear_bkg_img.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
